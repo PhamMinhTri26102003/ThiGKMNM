@@ -1,12 +1,8 @@
-#!/bin/bash
-echo "Nhap so nguyen to: "
-read n
-for ((i=2;i<=$n/2;i++))
-do
-if [$((n%i)) -eq 0 ]
-then 
-	echo "$n khong la snt."
-	exit 0
+#!bin/bash
+echo "Nhap vao 1 so nguyen: "
+read number
+if((number %2 !=0));then
+	echo "So vua nhap la so chan"
+else 
+	echo "So vua nhap khong la so chan"
 fi
-done
-echo "$n la so nguyen to!!!!"
